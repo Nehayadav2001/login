@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Login</h1>
+                    <h6>Please enter UserName & Password </h6>
+                </div>
+                    <form [formGroup]="loginform" (ngSubmit)="login()">
+                        <div class="mb-3">
+                          <label for="UserName" class="form-label">UserName</label>
+                          <input formControlName="UserName" type="UserName" class="form-control" id="UserName" aria-describedby="UserName">
+                          <div id="UserName" class="form-text">We'll never share your Details with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="Password" class="form-label">Password</label>
+                          <input formControlName="Password" type="password" class="form-control" id="Password">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-2">Login</button>
+                      </form>
+                     <a style="color:white; margin-top:10px" routerLink="/SignUp">New User? Click to SignUp..</a> 
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="text-center">
+                <h1>SignUp</h1>
+                <h6>Register Yourself</h6>
+            </div>
+                <form [formGroup]="signupform" (ngSubmit)="signUp()">
+                    <div>
+                        <div>
+                            <label for="Name" class="form-label">Name</label>
+                            <input formControlName="Name" type="Text" class="form-control" id="Name" aria-describedby="Name">
+                        </div>
+                        <div>
+                            <label for="UserName" class="form-label">UserName</label>
+                            <input formControlName="UserName"  type="Text" class="form-control" id="UserName" aria-describedby="UserName">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input formControlName="Email"  type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="cars">Select Your Role</label>
+                                <select name="Role" id="Role">
+                                <option value="User">User</option>
+                                <option value="Admin">Admin</option>
+                                <option value="SuperUser">SuperUser</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="Mobile" class="form-label">Mobile</label>
+                            <input formControlName="Mobile"  type="text" class="form-control" id="Mobile" aria-describedby="Mobile">
+                        </div>
+                        <div>
+                            <label for="Company" class="form-label">Company</label>
+                            <input formControlName="Company"  type="Text" class="form-control" id="Company" aria-describedby="Company">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="Password" class="form-label">Password</label>
+                      <input formControlName="Password"  type="text" class="form-control" id="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">SignUp</button>
+                </form>
+                <a style="color:white; margin-top:10px" routerLink="/login">Already Register? Click to Login</a> 
+        </div>
+    </div>
+</div>

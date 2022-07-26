@@ -1,0 +1,25 @@
+{
+  "posts": [],
+  "signupUsers": [
+    {
+      "Name": "neha",
+      "UserName": "neha",
+      "Email": "neha@gmail.com",
+      "Role": "",
+      "Mobile": "574753",
+      "Company": "fshshs",
+      "password": "",
+      "id": 1
+    },
+    {
+      "Name": "komal",
+      "UserName": "komal123",
+      "Email": "komal@gmail.com",
+      "Role": "",
+      "Mobile": "987654321",
+      "Company": "tcs",
+      "Password": "12345komal",
+      "id": 2
+    }
+  ]
+}
